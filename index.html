@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Stuff I wanna eat</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <center>
+                <h2>I wanna eat these:</h2>
+                <img class="food" src="pancakes.jpg">
+                <img class="food" src="pizza.jpg">
+                <img class="food" src="ramyeon.jpg">
+                <img class="food" src="cakepops.jpg">
+                <img class="food" src="spaghetti.jpg">
+                <img class="food" src="cookies.jpg">
+            </center>
+        </section>
+        <p>Outta these foods, which ones do you wanna eat? 🤔 <br> I wanna eat all of them, if I'm being honest.</p>
+        <br><br>
+        <p><em>I'm just hungry idk</em></p>
+        <script>
+            var yum = 0;
+            slide();
+
+            function slide() {
+                var i;
+                var x = document.getElementsByClassName("food");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                yum++;
+                if (yum > x.length) {yum = 1}
+                x[yum-1].style.display = "block";
+                setTimeout(slide, 2000);
+            }
+        </script>
+    </body>
+</html>

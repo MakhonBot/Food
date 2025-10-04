@@ -1,0 +1,12 @@
+p {
+    text-align: center;
+    background-color: rgb(226, 101, 63);
+    color: white;
+}
+body {
+    background-color: rgb(177, 67, 34);
+}
+.food {
+    height: 200px;
+    width: 200px;
+}
